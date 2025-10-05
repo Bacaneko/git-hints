@@ -18,3 +18,11 @@
 
 Команда 'git status' показывают только 3 состоянию файла:
 'staged', 'modified', 'untracked'
+
+## Как откатить измениня, если всё сломалось
+
+1) git restore --staged hello.txt - переведи файл hello.txt из состояния staged обратно в untracked или modified;
+
+2) git restore hello.txt - верни файл hello.txt к последней версии, которая была сохранена через git commit или git add
+
+3) git reset --hard b576d89 - удали все незакоммиченные изменения из staging и «рабочей зоны» вплоть до указанного коммита
