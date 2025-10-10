@@ -34,3 +34,31 @@
 2) git diff a9928ab 11bada1 - выведи разницу между двумя коммитами
 
 3) git diff --staged - покажи изменения, которые добавлены в staged-файлах
+
+## Ветки
+
+# Создание веток
+
+1) git branch feature/the-finest-branch — создай ветку от текущей с названием feature/the-finest-branch
+
+2) git checkout -b feature/the-finest-branch — создай ветку feature/the-finest-branch и сразу переключись на неё
+
+# Навигация по веткам
+
+1) git branch — покажи, какие есть ветки в репозитории и в какой из них я нахожусь
+
+2) git branch -a — покажи все известные ветки, как локальные (в локальном репозитории), так и удалённые (в origin на GitHub)
+
+3) git checkout feature/br — переключись на ветку feature/br
+
+# Сравнение веток
+
+1) git diff main HEAD — покажи разницу между веткой main и указателем на HEAD
+
+2) git diff HEAD~2 HEAD — покажи разницу между тем коммитом, который был два коммита назад, и текущим
+
+# Удаление веток
+
+1) git branch -d br-name — удали ветку br-name, но только если она является частью main
+
+2) git branch -D br-name — удали ветку br-name, даже если она не объединена с main
